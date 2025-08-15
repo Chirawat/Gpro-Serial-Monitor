@@ -78,7 +78,7 @@ class SerialMonitor(QMainWindow):
         self.resize(980, 640)
 
         # Load external logo (bundled with PyInstaller via --add-data)
-        self.logo_pm = load_logo(resource_path("GPro_Logo.jpg"), 28)
+        self.logo_pm = load_logo(resource_path("icon.jpg"), 28)
         self.setWindowIcon(QIcon(self.logo_pm))
 
         self.ser = None
