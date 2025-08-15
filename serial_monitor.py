@@ -26,7 +26,7 @@ def resource_path(relative_path: str) -> str:
     return str(Path(__file__).resolve().parent / relative_path)
 
 
-def load_logo(path: str = "icon.png", size: int = 28) -> QPixmap:
+def load_logo(path: str = "icon.jpg", size: int = 28) -> QPixmap:
     pm = QPixmap(path)
     if not pm.isNull():
         return pm.scaled(size, size, Qt.KeepAspectRatio, Qt.SmoothTransformation)
